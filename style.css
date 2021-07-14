@@ -1,0 +1,53 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* -----------------
+    Home page style 
+    ------------------ */
+.home_page{
+    background-color: #5E5FB2;
+    height: 677px;
+}
+.home_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.title-name{
+    height: 230px;
+    width: 485px;
+    margin-top: 207px;
+    margin-left: 156px;
+}
+.title{
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 80px;
+}
+.button{
+    display: block;
+    height: 44px;
+    width: 168px;
+    margin-left: 156px;
+    margin-top: 27px;
+    background: #E02C6D;
+}
+.button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500px;
+    color: white;
+    border-style: none;
+}
+.fas i{
+    color: white;
+}
+.thumbnail{
+    margin-top: 153px;
+    margin-right: 140px;
+}
+.thumbnail img{
+    height: 438px;
+    width: 556px;
+}
