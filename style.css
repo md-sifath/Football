@@ -31,6 +31,7 @@ body{
     width: 168px;
     margin-left: 156px;
     margin-top: 27px;
+    border-style: none;
     background: #E02C6D;
 }
 .button a{
@@ -38,9 +39,8 @@ body{
     font-size: 16px;
     font-weight: 500px;
     color: white;
-    border-style: none;
 }
-.fas i{
+.fa-arrow-right {
     color: white;
 }
 .thumbnail{
@@ -50,4 +50,144 @@ body{
 .thumbnail img{
     height: 438px;
     width: 556px;
+    transition: transform 2s ease-in;
+}
+.thumbnail:hover img{
+    transform:  scale(1.1);
+}
+
+ /* -----------------
+ Players profile style 
+ ----------------------*/
+.players-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px ;
+    grid-row-gap:27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.15);
+}
+.player_image img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+.player-info{
+    padding: 15px;
+}
+.player-name{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -28px;
+}
+.player-info p{
+    margin-top: -16px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* -----------------
+bonus section start 
+-------------------*/
+.sponcer{
+    margin-top: 156px;
+    display: flex;
+    justify-content: center;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 27px;
+}
+.logo-img img{
+    width: 100px;
+    height: 120px;
+    padding: 0 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+
+/* ------------
+footer style strat 
+--------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 156px;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+span i{
+    font-size: 32px;
+    padding: 14px;
+    color: gray;
+}
+.copywrite-text{
+    font-size: 18px;
+}
+
+
+
+
+/* ----------------
+   media query strat 
+-------------------*/
+
+@media only screen and (max-width :689px){
+.home_grid{
+    background-color: #5E5FB2;
+    grid-template-columns:1fr;
+    width: 100vw;
+ }
+ .title-name{
+     width: 278px;
+     height: 138px;
+     margin-left: 16px;
+     margin-top: 112px;
+ }
+ .title{
+    font-size: 34px;
+    line-height: 50px;
+}
+.button{
+    margin-left: 16px;
+}
+.thumbnail{
+    margin-top: 30px;
+}
+ .thumbnail img{
+     height: 260px;
+     width: 329px;
+    
+ }
+ /*----------------------*/
+ .players{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px;
+   }
+   .players-profile{
+       margin-top: 47px;
+   }
+
+   /*-------------------------*/
+
+   .logos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        
+    }
+
 }
