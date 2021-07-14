@@ -173,21 +173,40 @@ span i{
     
  }
  /*----------------------*/
- .players{
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 24px;
-   }
-   .players-profile{
-       margin-top: 47px;
-   }
+    .players-profile{
+        margin-top: 47px;
+        display: flex;
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+    }
 
    /*-------------------------*/
 
    .logos{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        
+        grid-row-gap: 5px;
+        margin-top: 10px;
     }
 
+    /*---------------------------*/
+    footer{
+        margin-top: 50px;
+    }
+    .logo img{
+        width: 275px;
+        height: 63px;
+    }
+    .social-icon{
+        width: 170px;
+        height: 32px;
+    }
+    span i{
+        font-size: 18px;
+        padding: 10px;
+        color: gray;
+    }
 }
